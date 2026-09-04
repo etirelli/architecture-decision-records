@@ -95,7 +95,7 @@ Individual users and teams register, version, and govern the assets they create,
 
 ### The boundary
 
-The primary boundary is drawn at the Asset Library — between what Red Hat delivers as a vendor and what the platform and its users manage. This is the seam where supply-chain, certification, and versioning concerns end and where admin curation and user governance begin. Because the Asset Catalog and Asset Registry share one MLflow substrate, the Asset Library is the only place a hard architectural boundary is required; the catalog/registry distinction is a matter of namespace scope and RBAC, not separate systems. Drawing the boundary here keeps vendor obligations out of the catalog and registry surfaces and lets content flow one direction: delivered → curated → consumed → registered.
+The primary boundary is drawn at the Asset Library — between what Red Hat delivers as a vendor and what the platform and its users manage. This is the seam where supply-chain, certification, and versioning concerns end and where admin curation and user governance begin. Because the Asset Catalog and Asset Registry share one MLflow substrate, the Asset Library is the only place a hard architectural boundary is required; the catalog/registry distinction is a matter of namespace scope and RBAC, not separate systems. Drawing the boundary here keeps vendor obligations out of the catalog and registry surfaces: delivery across the Asset Library boundary is one-way, from Red Hat as a vendor into the platform. How assets subsequently move between the Asset Catalog and Asset Registry is left to follow-up design documents.
 
 ## Alternatives
 
